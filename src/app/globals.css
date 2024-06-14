@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+@layer components {
+
+  /* box shadow */
+  .button-box-shadow {
+    box-shadow: 0px 3px 0px 0px #21804c;
+  }
+
+  .card-box-shadow {
+    box-shadow: 0px 8px 40px 0px rgba(33, 33, 33, 0.05) !important;
+  }
+
+  .primary-drop-shadow {
+    box-shadow: 0px 8px 32px 0px rgba(50, 192, 114, 0.24) !important;
+  }
+
+  .card-box-shadow-neg {
+    box-shadow: 0px -8px 40px 0px rgba(33, 33, 33, 0.05) !important;
+  }
+
+  .dollar-box-shadow {
+    box-shadow: 0px 4px 12px rgba(251, 186, 0, 0.32) !important;
+  }
+
+  .brand-image-linear-gradient {
+    background: linear-gradient(90deg,
+        #212121 19.05%,
+        rgba(33, 33, 33, 0) 100%);
+  }
+
+  /* button */
+  .button-calendar {
+    @apply rounded-small bg-neutral-100 px-3.5 py-2.5 text-xl font-extrabold text-neutral card-box-shadow;
+  }
+
+  .button-balance {
+    @apply rounded-small bg-neutral-100 px-3 py-2.5 text-xl font-extrabold text-neutral card-box-shadow;
+  }
+
+  .button-signin {
+    @apply rounded-small bg-primary-100 px-6 py-2.5 text-base font-bold text-primary-700 hover: bg-primary-100;
+  }
+
+  .button-signup {
+    @apply rounded-small bg-primary px-6 py-2.5 text-base font-bold text-neutral-100 hover: bg-primary-600;
+  }
+}
+
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    font-family: Mulish, sans-serif;
+  }
+
+  .mobile-navbar-shadow {
+    box-shadow: 0px -8px 40px 0px rgba(33, 33, 33, 0.05);
+  }
+}
+
+@tailwind utilities;
