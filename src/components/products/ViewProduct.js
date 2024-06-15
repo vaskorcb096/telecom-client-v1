@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import QRCode from "react-qr-code";
+// import QRCode from "react-qr-code";
 
 const ViewProduct = ({ selectedProduct }) => {
   console.log("selectedProduct", selectedProduct);
@@ -7,7 +7,7 @@ const ViewProduct = ({ selectedProduct }) => {
   return (
     <div className="text-center capitalize">
       <div className="flex justify-center">
-        <QRCode value={sellPageUrl} />
+        {/* <QRCode value={sellPageUrl} /> */}
       </div>
       <h4 className="text-lg font-semibold mb-3 mt-4">
         {selectedProduct.product_name}
