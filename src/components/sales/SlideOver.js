@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 import { useSession } from "next-auth/react";
 import axiosInstance from "@/services/axiosInstance";
 import { Fragment, useEffect, useState } from "react";
-import CustomerReceiptPDF from "../customers/customerReceiptPDF";
+
 import {
   Button,
   Input,
@@ -17,6 +17,7 @@ import {
 import AddCustomer from "../customers/AddCustomer";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import ModalWrapper from "../common/modal/ModalWrapper";
+import CustomerReceiptPDF from "../customers/CustomerReceiptPDF";
 
 export default function SlideOver({
   children,
@@ -70,7 +71,6 @@ export default function SlideOver({
       customer: selectedCustomer,
       payment_method: selected,
     };
-    
 
     if (selectedCustomer.length === 0) {
       toast.error("Please select your customer ");

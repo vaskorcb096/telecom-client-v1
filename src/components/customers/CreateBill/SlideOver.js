@@ -17,7 +17,7 @@ import axiosInstance from "@/services/axiosInstance";
 import { useSession } from "next-auth/react";
 import { redirect, useParams, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import CustomerReceiptPDF from "../customerReceiptPDF";
+import CustomerReceiptPDF from "../CustomerReceiptPDF";
 
 export default function SlideOver({
   open,
