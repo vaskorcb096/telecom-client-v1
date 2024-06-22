@@ -1,3 +1,5 @@
+'use client'
+
 import Dashboard from "@/components/Home/Dashboard";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
