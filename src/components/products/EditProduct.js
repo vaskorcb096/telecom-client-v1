@@ -237,7 +237,6 @@ const EditProduct = ({ selectedProduct, onClose, setProducts, categories, brands
                 labelPlacement="outside"
                 variant="bordered"
                 placeholder="Enter your description"
-                disableAnimation
                 disableAutosize
                 classNames={{
                     inputWrapper: 'border-1',

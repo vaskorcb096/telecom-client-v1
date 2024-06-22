@@ -1,4 +1,3 @@
-"use client";
 import SignInComponent from "@/components/auth/SignInComponent";
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";

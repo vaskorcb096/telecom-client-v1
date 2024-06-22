@@ -111,7 +111,6 @@ const ReturnProduct = ({ company, invoiceNo, returnData, onClose }) => {
           variant='bordered'
           placeholder=''
           radius='sm'
-          disableAnimation
           disableAutosize
           maxRows={2}
           classNames={{

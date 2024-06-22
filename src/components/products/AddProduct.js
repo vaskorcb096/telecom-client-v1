@@ -290,7 +290,6 @@ const AddProduct = ({ onClose, setProducts, categories, brands, retailers }) => 
                 labelPlacement="outside"
                 variant="bordered"
                 placeholder="Enter your description"
-                disableAnimation
                 disableAutosize
                 maxRows={2}
                 classNames={{
